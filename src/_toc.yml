@@ -3,7 +3,19 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
+parts:
+  # Part 1: Introduction
+  - caption: Introduction to Modeling Social Behavior
+    numbered: true
+    chapters:
+      - file: 01_Intro/01a_WhatIsAModel
+  # Part 2: Segregation
+  # - caption: Segregation Model
+  # Part 3: Contagion
+  # - caption: Contagion Models
+  # Part 4: Cooperation
+  # - caption: Cooperation Models
+  # Part 5: Polarization Models
+  # - caption: Polarization Models
+  # Part 6: What next?
+  # - caption: What Next?
