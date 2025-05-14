@@ -6,9 +6,22 @@ This is a course that will involve two areas of knowledge: social sciences and c
 
 This will be a hands-on course, where we will learn by doing. As we do, we will also reflect and learn important concepts and ideas that will nurture our understanding of the world and our place in it.
 
-Prof. Jonathan Hill and Prof. Eric Araújo will be your guides in this journey.
+Prof. Jonathan Hill and [Prof. Eric Araújo](https://ericaraujo.com/) will be your guides in this journey.
 
+The following links provide the office hours and contact information for both professors:
 
+Prof. Jonathan Hill
+
+- [Office Hours](https://www.jonathanhill.org/)
+- [Contact](jonathan.hill@calvin.edu)
+
+Prof. Eric Araújo
+
+- [Office Hours](https://outlook.office365.com/calendar/published/c0bd07a3f1d64aaf9a74c91921ce7536@calvin.edu/79189cd730424803bceba861959c7e752179000899390454025/calendar.html)
+- [Contact](eric.araujo@calvin.edu)
 
 ```{tableofcontents}
+```
+
+```{bibliography}
 ```
