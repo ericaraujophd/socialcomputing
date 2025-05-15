@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. What are Models? &#8212; HNRS251 - Social Computing</title>
+    <title>3. Agents &#8212; HNRS251 - Social Computing</title>
   
   
   
@@ -57,13 +57,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '01_Intro/01a_WhatIsAModel';</script>
-    <link rel="canonical" href="https://github.com/ericaraujophd/socialcomputing/01_Intro/01a_WhatIsAModel.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'netlogo/1_agents';</script>
+    <link rel="canonical" href="https://github.com/ericaraujophd/socialcomputing/netlogo/1_agents.html" />
     <link rel="icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2. Programming in NetLogo" href="../netlogo/0_intro2netlogo.html" />
-    <link rel="prev" title="HNRS251 - Social Computing" href="../intro.html" />
+    <link rel="prev" title="2. Programming in NetLogo" href="0_intro2netlogo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,13 +181,13 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction to Modeling Social Behavior</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. What are Models?</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_Intro/01a_WhatIsAModel.html">1. What are Models?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Netlogo Programming Guide</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../netlogo/0_intro2netlogo.html">2. Programming in NetLogo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../netlogo/1_agents.html">3. Agents</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="0_intro2netlogo.html">2. Programming in NetLogo</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Agents</a></li>
 </ul>
 
     </div>
@@ -260,7 +259,7 @@
       
       
       
-      <li><a href="https://github.com/ericaraujophd/socialcomputing/edit/main/src/01_Intro/01a_WhatIsAModel.md" target="_blank"
+      <li><a href="https://github.com/ericaraujophd/socialcomputing/edit/main/src/netlogo/1_agents.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -277,7 +276,7 @@
       
       
       
-      <li><a href="https://github.com/ericaraujophd/socialcomputing/issues/new?title=Issue%20on%20page%20%2F01_Intro/01a_WhatIsAModel.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ericaraujophd/socialcomputing/issues/new?title=Issue%20on%20page%20%2Fnetlogo/1_agents.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -307,7 +306,7 @@
       
       
       
-      <li><a href="../_sources/01_Intro/01a_WhatIsAModel.md" target="_blank"
+      <li><a href="../_sources/netlogo/1_agents.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -389,7 +388,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>What are Models?</h1>
+    <h1>Agents</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -403,15 +402,19 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="what-are-models">
-<h1><span class="section-number">1. </span>What are Models?<a class="headerlink" href="#what-are-models" title="Link to this heading">#</a></h1>
-<p>By the end of this unit, students will be able to…</p>
-<ul class="simple">
-<li><p>explain what is a model and differenciate equation models from agent models;</p></li>
-<li><p>use Netlogo for opening models from the models library;</p></li>
-<li><p>navigate through Netlogo tabs (interface, info and code);</p></li>
-<li><p>build a simple model to create turtles and move them around the World.</p></li>
-</ul>
+  <section id="agents">
+<h1><span class="section-number">3. </span>Agents<a class="headerlink" href="#agents" title="Link to this heading">#</a></h1>
+<p>Agents are the main actors in NetLogo. They can be <strong>turtles</strong>, <strong>patches</strong>, <strong>links</strong>, or the <strong>observer</strong>. Each agent has its own set of properties and behaviors.</p>
+<p>The <strong>turtles</strong> are the most common type of agent. They can move around the <strong>world</strong>, interact with other <strong>turtles</strong>, and change their properties. <strong>Turtles</strong> can also have different shapes and colors, which can be used to represent different types of agents in your model.</p>
+<p>The <strong>world</strong> is made up of <strong>patches</strong>, which are the individual squares that make up the 2D grid. Each <strong>patch</strong> can have its own properties, such as color and elevation. <strong>Patches</strong> can also be used to represent different types of terrain or resources in your model. The <strong>turtles</strong> can move around the <strong>patches</strong> and interact with them, which allows you to create complex models of behavior and interaction.</p>
+<p><strong>Links</strong> are a type of agents used to connect <strong>turtles</strong> and represent relationships between them. They can be used to represent social networks, transportation systems, or any other type of connection between agents.</p>
+<p>The <strong>observer</strong> is a special agent that can control the simulation and interact with the other agents. The <strong>observer</strong> can create and destroy <strong>turtles</strong>, change the properties of <strong>patches</strong>, and control the flow of the simulation. The <strong>observer</strong> can also be used to create user interfaces, such as buttons and sliders, to control the simulation. It is important to note that the <strong>observer</strong> does not have any properties or behaviors of its own, but it can interact with all other agents in the simulation.</p>
+<p><img alt="NetLogo agents" src="netlogo/src/netlogo/imgs/NetLogo-Agents.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When NetLogo is initiate, there are no <strong>turtles</strong> in the <strong>world</strong>. The observer can create <strong>turtles</strong> using the <code class="docutils literal notranslate"><span class="pre">create-turtles</span></code> command. <strong>Patches</strong> can also create <strong>turtles</strong> using the <code class="docutils literal notranslate"><span class="pre">sprout</span></code> command.</p>
+<p>Patches can’t move, but you can consider them as active agents from the beggining.</p>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -427,7 +430,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./01_Intro"
+            path: "./netlogo"
         },
         predefinedOutput: true
     }
@@ -445,22 +448,13 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../intro.html"
+       href="0_intro2netlogo.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">HNRS251 - Social Computing</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../netlogo/0_intro2netlogo.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title"><span class="section-number">2. </span>Programming in NetLogo</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
