@@ -10,7 +10,7 @@ The **world** is made up of **patches**, which are the individual squares that m
 
 The **observer** is a special agent that can control the simulation and interact with the other agents. The **observer** can create and destroy **turtles**, change the properties of **patches**, and control the flow of the simulation. The **observer** can also be used to create user interfaces, such as buttons and sliders, to control the simulation. It is important to note that the **observer** does not have any properties or behaviors of its own, but it can interact with all other agents in the simulation.
 
-![NetLogo agents](src/netlogo/imgs/NetLogo-Agents.png)
+![NetLogo agents](../imgs/NetLogo-Agents.png)
 
 ```{note}
 When NetLogo is initiate, there are no **turtles** in the **world**. The observer can create **turtles** using the `create-turtles` command. **Patches** can also create **turtles** using the `sprout` command.
