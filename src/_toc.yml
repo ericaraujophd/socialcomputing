@@ -19,3 +19,12 @@ parts:
   # - caption: Polarization Models
   # Part 6: What next?
   # - caption: What Next?
+  # Part 7: Netlogo
+  - caption: Netlogo Programming Guide
+    numbered: true
+    chapters:
+      - file: netlogo/0_intro2netlogo
+      - file: netlogo/1_agents
+        sections:
+          - file: netlogo/1a_turtles
+

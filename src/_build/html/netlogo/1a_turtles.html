@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. What are Models? &#8212; HNRS251 - Social Computing</title>
+    <title>2.1. Turtles &#8212; HNRS251 - Social Computing</title>
   
   
   
@@ -57,13 +57,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = '01_Intro/01a_WhatIsAModel';</script>
-    <link rel="canonical" href="https://github.com/ericaraujophd/socialcomputing/01_Intro/01a_WhatIsAModel.html" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'netlogo/1a_turtles';</script>
+    <link rel="canonical" href="https://github.com/ericaraujophd/socialcomputing/netlogo/1a_turtles.html" />
     <link rel="icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1. Programming in NetLogo" href="../netlogo/0_intro2netlogo.html" />
-    <link rel="prev" title="HNRS251 - Social Computing" href="../intro.html" />
+    <link rel="prev" title="2. Agents" href="1_agents.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -182,14 +181,14 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction to Modeling Social Behavior</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. What are Models?</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../01_Intro/01a_WhatIsAModel.html">1. What are Models?</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Netlogo Programming Guide</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../netlogo/0_intro2netlogo.html">1. Programming in NetLogo</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../netlogo/1_agents.html">2. Agents</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../netlogo/1a_turtles.html">2.1. Turtles</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="0_intro2netlogo.html">1. Programming in NetLogo</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="1_agents.html">2. Agents</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">2.1. Turtles</a></li>
 </ul>
 </details></li>
 </ul>
@@ -263,7 +262,7 @@
       
       
       
-      <li><a href="https://github.com/ericaraujophd/socialcomputing/edit/main/src/01_Intro/01a_WhatIsAModel.md" target="_blank"
+      <li><a href="https://github.com/ericaraujophd/socialcomputing/edit/main/src/netlogo/1a_turtles.md" target="_blank"
    class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -280,7 +279,7 @@
       
       
       
-      <li><a href="https://github.com/ericaraujophd/socialcomputing/issues/new?title=Issue%20on%20page%20%2F01_Intro/01a_WhatIsAModel.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/ericaraujophd/socialcomputing/issues/new?title=Issue%20on%20page%20%2Fnetlogo/1a_turtles.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -310,7 +309,7 @@
       
       
       
-      <li><a href="../_sources/01_Intro/01a_WhatIsAModel.md" target="_blank"
+      <li><a href="../_sources/netlogo/1a_turtles.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -381,7 +380,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -392,11 +393,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>What are Models?</h1>
+    <h1>Turtles</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-turtles">2.1.1. Creating Turtles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moving-turtles">2.1.2. Moving Turtles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-turtles-properties">2.1.3. Changing Turtles’ Properties</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -406,15 +417,90 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="what-are-models">
-<h1><span class="section-number">1. </span>What are Models?<a class="headerlink" href="#what-are-models" title="Link to this heading">#</a></h1>
-<p>By the end of this unit, students will be able to…</p>
-<ul class="simple">
-<li><p>explain what is a model and differenciate equation models from agent models;</p></li>
-<li><p>use Netlogo for opening models from the models library;</p></li>
-<li><p>navigate through Netlogo tabs (interface, info and code);</p></li>
-<li><p>build a simple model to create turtles and move them around the World.</p></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="turtles">
+<h1><span class="section-number">2.1. </span>Turtles<a class="headerlink" href="#turtles" title="Link to this heading">#</a></h1>
+<p>Turtles are the kind of agents you will use most of the time. This tutorial will walk you through the commands that permit you to create and manipulate turtles in your model.</p>
+<p>We will also cover the properties of turtles, which are the attributes that define their behavior and appearance. Turtles can have different shapes, colors, and sizes, and you can use these properties to represent different types of agents in your model.</p>
+<section id="creating-turtles">
+<h2><span class="section-number">2.1.1. </span>Creating Turtles<a class="headerlink" href="#creating-turtles" title="Link to this heading">#</a></h2>
+<p>To create turtles in your model, you can use the <code class="docutils literal notranslate"><span class="pre">create-turtles</span></code> command. This command creates a specified number of turtles and assigns them random properties. For example, the following command creates 10 turtles:</p>
+<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>create-turtles 10
+</pre></div>
+</div>
+<p>This command creates 10 turtles with random properties. You can also specify the properties of the turtles when you create them. For example, the following command creates 10 turtles with a specific color and shape:</p>
+<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>create-turtles 10 [
+  set color red
+  set shape &quot;circle&quot;
+]
+</pre></div>
+</div>
+<p>This command creates 10 turtles with the color red and the shape of a circle. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command to change the properties of turtles after they are created. For example, the following command changes the color of all turtles to blue:</p>
+<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
+  set color blue
+]
+</pre></div>
+</div>
+</section>
+<section id="moving-turtles">
+<h2><span class="section-number">2.1.2. </span>Moving Turtles<a class="headerlink" href="#moving-turtles" title="Link to this heading">#</a></h2>
+<p>To move turtles in your model, you can use the <code class="docutils literal notranslate"><span class="pre">fd</span></code> (forward) and <code class="docutils literal notranslate"><span class="pre">bk</span></code> (backward) commands. These commands move turtles a specified distance in the direction they are facing. For example, the following command moves all turtles forward 10 steps:</p>
+<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
+  fd 10
+]
+</pre></div>
+</div>
+<p>This command moves all turtles forward 10 steps. You can also use the <code class="docutils literal notranslate"><span class="pre">rt</span></code> (right turn) and <code class="docutils literal notranslate"><span class="pre">lt</span></code> (left turn) commands to change the direction of turtles. For example, the following command turns all turtles right 90 degrees:</p>
+<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
+  rt 90
+]
+</pre></div>
+</div>
+<p>This command turns all turtles right 90 degrees. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">heading</span></code> command to set the direction of turtles to a specific angle. For example, the following command sets the heading of all turtles to 45 degrees:</p>
+<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
+  set heading 45
+]
+</pre></div>
+</div>
+</section>
+<section id="changing-turtles-properties">
+<h2><span class="section-number">2.1.3. </span>Changing Turtles’ Properties<a class="headerlink" href="#changing-turtles-properties" title="Link to this heading">#</a></h2>
+<p>To change the properties of turtles, you can use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command. For example, the following command changes the color of all turtles to green:</p>
+<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
+  set color green
+]
+</pre></div>
+</div>
+<p>This command changes the color of all turtles to green. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command to change other properties of turtles, such as size and shape. For example, the following command changes the size of all turtles to 2:</p>
+<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
+  set size 2
+]
+</pre></div>
+</div>
+<p>This command changes the size of all turtles to 2. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command to change the shape of turtles. For example, the following command changes the shape of all turtles to a square:</p>
+<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
+  set shape &quot;square&quot;
+]
+</pre></div>
+</div>
+<p>This command changes the shape of all turtles to a square. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command to change other properties of turtles, such as color and heading. For example, the following command changes the color of all turtles to red:</p>
+<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
+  set color red
+]
+</pre></div>
+</div>
+<p>This command changes the color of all turtles to red. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command to change other properties of turtles, such as size and shape. For example, the following command changes the size of all turtles to 2:</p>
+<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
+  set size 2
+]
+</pre></div>
+</div>
+<p>This command changes the size of all turtles to 2. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command to change other properties of turtles, such as color and heading. For example, the following command changes the color of all turtles to red:</p>
+<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
+  set color red
+]
+</pre></div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -430,7 +516,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./01_Intro"
+            path: "./netlogo"
         },
         predefinedOutput: true
     }
@@ -448,22 +534,13 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../intro.html"
+       href="1_agents.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">HNRS251 - Social Computing</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Agents</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="../netlogo/0_intro2netlogo.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">1. </span>Programming in NetLogo</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -471,6 +548,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#creating-turtles">2.1.1. Creating Turtles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#moving-turtles">2.1.2. Moving Turtles</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#changing-turtles-properties">2.1.3. Changing Turtles’ Properties</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
