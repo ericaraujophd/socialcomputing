@@ -429,80 +429,80 @@ document.write(`
 <section id="creating-turtles">
 <h2><span class="section-number">2.1.1. </span>Creating Turtles<a class="headerlink" href="#creating-turtles" title="Link to this heading">#</a></h2>
 <p>To create turtles in your model, you can use the <code class="docutils literal notranslate"><span class="pre">create-turtles</span></code> command. This command creates a specified number of turtles and assigns them random properties. For example, the following command creates 10 turtles:</p>
-<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>create-turtles 10
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="nv">create-turtles</span><span class="w"> </span><span class="mi">10</span>
 </pre></div>
 </div>
 <p>This command creates 10 turtles with random properties. You can also specify the properties of the turtles when you create them. For example, the following command creates 10 turtles with a specific color and shape:</p>
-<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>create-turtles 10 [
-  set color red
-  set shape &quot;circle&quot;
-]
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="nv">create-turtles</span><span class="w"> </span><span class="mi">10</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nv">set</span><span class="w"> </span><span class="nv">color</span><span class="w"> </span><span class="nv">red</span>
+<span class="w">  </span><span class="nv">set</span><span class="w"> </span><span class="nv">shape</span><span class="w"> </span><span class="s">&quot;circle&quot;</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 <p>This command creates 10 turtles with the color red and the shape of a circle. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command to change the properties of turtles after they are created. For example, the following command changes the color of all turtles to blue:</p>
-<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
-  set color blue
-]
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="nv">ask</span><span class="w"> </span><span class="nv">turtles</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nv">set</span><span class="w"> </span><span class="nv">color</span><span class="w"> </span><span class="nv">blue</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 </section>
 <section id="moving-turtles">
 <h2><span class="section-number">2.1.2. </span>Moving Turtles<a class="headerlink" href="#moving-turtles" title="Link to this heading">#</a></h2>
 <p>To move turtles in your model, you can use the <code class="docutils literal notranslate"><span class="pre">fd</span></code> (forward) and <code class="docutils literal notranslate"><span class="pre">bk</span></code> (backward) commands. These commands move turtles a specified distance in the direction they are facing. For example, the following command moves all turtles forward 10 steps:</p>
-<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
-  fd 10
-]
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="nv">ask</span><span class="w"> </span><span class="nv">turtles</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nv">fd</span><span class="w"> </span><span class="mi">10</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 <p>This command moves all turtles forward 10 steps. You can also use the <code class="docutils literal notranslate"><span class="pre">rt</span></code> (right turn) and <code class="docutils literal notranslate"><span class="pre">lt</span></code> (left turn) commands to change the direction of turtles. For example, the following command turns all turtles right 90 degrees:</p>
-<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
-  rt 90
-]
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="nv">ask</span><span class="w"> </span><span class="nv">turtles</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nv">rt</span><span class="w"> </span><span class="mi">90</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 <p>This command turns all turtles right 90 degrees. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">heading</span></code> command to set the direction of turtles to a specific angle. For example, the following command sets the heading of all turtles to 45 degrees:</p>
-<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
-  set heading 45
-]
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="nv">ask</span><span class="w"> </span><span class="nv">turtles</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nv">set</span><span class="w"> </span><span class="nv">heading</span><span class="w"> </span><span class="mi">45</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 </section>
 <section id="changing-turtles-properties">
 <h2><span class="section-number">2.1.3. </span>Changing Turtles’ Properties<a class="headerlink" href="#changing-turtles-properties" title="Link to this heading">#</a></h2>
 <p>To change the properties of turtles, you can use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command. For example, the following command changes the color of all turtles to green:</p>
-<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
-  set color green
-]
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="nv">ask</span><span class="w"> </span><span class="nv">turtles</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nv">set</span><span class="w"> </span><span class="nv">color</span><span class="w"> </span><span class="nv">green</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 <p>This command changes the color of all turtles to green. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command to change other properties of turtles, such as size and shape. For example, the following command changes the size of all turtles to 2:</p>
-<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
-  set size 2
-]
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="nv">ask</span><span class="w"> </span><span class="nv">turtles</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nv">set</span><span class="w"> </span><span class="nv">size</span><span class="w"> </span><span class="mi">2</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 <p>This command changes the size of all turtles to 2. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command to change the shape of turtles. For example, the following command changes the shape of all turtles to a square:</p>
-<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
-  set shape &quot;square&quot;
-]
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="nv">ask</span><span class="w"> </span><span class="nv">turtles</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nv">set</span><span class="w"> </span><span class="nv">shape</span><span class="w"> </span><span class="s">&quot;square&quot;</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 <p>This command changes the shape of all turtles to a square. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command to change other properties of turtles, such as color and heading. For example, the following command changes the color of all turtles to red:</p>
-<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
-  set color red
-]
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="nv">ask</span><span class="w"> </span><span class="nv">turtles</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nv">set</span><span class="w"> </span><span class="nv">color</span><span class="w"> </span><span class="nv">red</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 <p>This command changes the color of all turtles to red. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command to change other properties of turtles, such as size and shape. For example, the following command changes the size of all turtles to 2:</p>
-<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
-  set size 2
-]
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="nv">ask</span><span class="w"> </span><span class="nv">turtles</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nv">set</span><span class="w"> </span><span class="nv">size</span><span class="w"> </span><span class="mi">2</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 <p>This command changes the size of all turtles to 2. You can also use the <code class="docutils literal notranslate"><span class="pre">set</span></code> command to change other properties of turtles, such as color and heading. For example, the following command changes the color of all turtles to red:</p>
-<div class="highlight-netlogo notranslate"><div class="highlight"><pre><span></span>ask turtles [
-  set color red
-]
+<div class="highlight-scheme notranslate"><div class="highlight"><pre><span></span><span class="nv">ask</span><span class="w"> </span><span class="nv">turtles</span><span class="w"> </span><span class="p">[</span>
+<span class="w">  </span><span class="nv">set</span><span class="w"> </span><span class="nv">color</span><span class="w"> </span><span class="nv">red</span>
+<span class="p">]</span>
 </pre></div>
 </div>
 </section>
