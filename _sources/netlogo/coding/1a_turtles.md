@@ -105,3 +105,20 @@ ask turtles [
 ]
 ```
 
+The table below contains all properties that you can set for turtles:
+
+| Property | Description |
+|---|---|
+| `who` | The unique identifier of the turtle. It is automatically assigned by NetLogo and cannot be changed. |
+| `color` | The color of the turtle. Can be set to any color name or number. |
+| `heading` | The direction the turtle is facing. Can be set to any angle in degrees. |
+| `xcor` | The x-coordinate of the turtle's position in the world. Can be set to any number. |
+| `ycor` | The y-coordinate of the turtle's position in the world. Can be set to any number. |
+| `shape` | The shape of the turtle. Can be set to any shape name defined in the model. |
+| `label` | The text label displayed above the turtle. Can be set to any string. |
+| `label-color` | The color of the turtle's label. Can be set to any color name or number. |
+| `breed` | The breed of the turtle. Can be set to any breed defined in the model. |
+| `hidden?` | A boolean value indicating whether the turtle is hidden or visible. Can be set to `true` or `false`. |
+| `size` | The size of the turtle. Can be set to any number. |
+| `pen-size` | The size of the turtle's pen. Can be set to any number. |
+| `pen-mode` | The mode of the turtle's pen. Can be set to `up` or `down`. |
