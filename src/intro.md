@@ -17,13 +17,5 @@ The following links provide the office hours and contact information for both pr
 | Prof. Jonathan Hill 	| https://www.jonathanhill.org/ 	| jonathan.hill@calvin.edu 	|
 | Prof. Eric Araújo 	| [My Agenda](https://outlook.office365.com/calendar/published/c0bd07a3f1d64aaf9a74c91921ce7536@calvin.edu/79189cd730424803bceba861959c7e752179000899390454025/calendar.html) 	| eric.araujo@calvin.edu 	|
 
-
-
-## References 
-
-```{bibliography}
-```
-
-
 ```{tableofcontents}
 ```

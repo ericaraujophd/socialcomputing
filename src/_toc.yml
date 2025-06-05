@@ -20,11 +20,22 @@ parts:
   # Part 6: What next?
   # - caption: What Next?
   # Part 7: Netlogo
+  - caption: Netlogo Interface Guide
+    chapters:
+      - file: netlogo/interface/0_intro
   - caption: Netlogo Programming Guide
     numbered: true
     chapters:
-      - file: netlogo/0_intro2netlogo
-      - file: netlogo/1_agents
+      - file: netlogo/coding/0_intro2netlogo
+      - file: netlogo/coding/1_agents
         sections:
-          - file: netlogo/1a_turtles
+          - file: netlogo/coding/1a_turtles
+  - caption: Netlogo Behavior Space Guide
+    chapters:
+      - file: netlogo/behaviorspace/0_intro2behaviorspace
+      # - file: netlogo/behaviorspace/1a_runningbehaviorspace
+      # - file: netlogo/behaviorspace/1b_analyzingbehaviorspace
+  - caption: References
+    chapters:
+      - file: references
 

@@ -8,13 +8,13 @@ We will also cover the properties of turtles, which are the attributes that defi
 
 To create turtles in your model, you can use the `create-turtles` command. This command creates a specified number of turtles and assigns them random properties. For example, the following command creates 10 turtles:
 
-```netlogo
+```bash
 create-turtles 10
 ```
 
 This command creates 10 turtles with random properties. You can also specify the properties of the turtles when you create them. For example, the following command creates 10 turtles with a specific color and shape:
 
-```netlogo
+```bash
 create-turtles 10 [
   set color red
   set shape "circle"
@@ -23,7 +23,7 @@ create-turtles 10 [
 
 This command creates 10 turtles with the color red and the shape of a circle. You can also use the `set` command to change the properties of turtles after they are created. For example, the following command changes the color of all turtles to blue:
 
-```netlogo
+```bash
 ask turtles [
   set color blue
 ]
@@ -33,7 +33,7 @@ ask turtles [
 
 To move turtles in your model, you can use the `fd` (forward) and `bk` (backward) commands. These commands move turtles a specified distance in the direction they are facing. For example, the following command moves all turtles forward 10 steps:
 
-```netlogo
+```bash
 ask turtles [
   fd 10
 ]
@@ -41,7 +41,7 @@ ask turtles [
 
 This command moves all turtles forward 10 steps. You can also use the `rt` (right turn) and `lt` (left turn) commands to change the direction of turtles. For example, the following command turns all turtles right 90 degrees:
 
-```netlogo
+```bash
 ask turtles [
   rt 90
 ]
@@ -49,7 +49,7 @@ ask turtles [
 
 This command turns all turtles right 90 degrees. You can also use the `set heading` command to set the direction of turtles to a specific angle. For example, the following command sets the heading of all turtles to 45 degrees:
 
-```netlogo
+```bash
 ask turtles [
   set heading 45
 ]
@@ -59,7 +59,7 @@ ask turtles [
 
 To change the properties of turtles, you can use the `set` command. For example, the following command changes the color of all turtles to green:
 
-```netlogo
+```bash
 ask turtles [
   set color green
 ]
@@ -67,7 +67,7 @@ ask turtles [
 
 This command changes the color of all turtles to green. You can also use the `set` command to change other properties of turtles, such as size and shape. For example, the following command changes the size of all turtles to 2:
 
-```netlogo
+```bash
 ask turtles [
   set size 2
 ]
@@ -75,7 +75,7 @@ ask turtles [
 
 This command changes the size of all turtles to 2. You can also use the `set` command to change the shape of turtles. For example, the following command changes the shape of all turtles to a square:
 
-```netlogo
+```bash
 ask turtles [
   set shape "square"
 ]
@@ -83,7 +83,7 @@ ask turtles [
 
 This command changes the shape of all turtles to a square. You can also use the `set` command to change other properties of turtles, such as color and heading. For example, the following command changes the color of all turtles to red:
 
-```netlogo
+```bash
 ask turtles [
   set color red
 ]
@@ -91,7 +91,7 @@ ask turtles [
 
 This command changes the color of all turtles to red. You can also use the `set` command to change other properties of turtles, such as size and shape. For example, the following command changes the size of all turtles to 2:
 
-```netlogo
+```bash
 ask turtles [
   set size 2
 ]
@@ -99,9 +99,26 @@ ask turtles [
 
 This command changes the size of all turtles to 2. You can also use the `set` command to change other properties of turtles, such as color and heading. For example, the following command changes the color of all turtles to red:
 
-```netlogo
+```bash
 ask turtles [
   set color red
 ]
 ```
 
+The table below contains all properties that you can set for turtles:
+
+| Property | Description |
+|---|---|
+| `who` | The unique identifier of the turtle. It is automatically assigned by NetLogo and cannot be changed. |
+| `color` | The color of the turtle. Can be set to any color name or number. |
+| `heading` | The direction the turtle is facing. Can be set to any angle in degrees. |
+| `xcor` | The x-coordinate of the turtle's position in the world. Can be set to any number. |
+| `ycor` | The y-coordinate of the turtle's position in the world. Can be set to any number. |
+| `shape` | The shape of the turtle. Can be set to any shape name defined in the model. |
+| `label` | The text label displayed above the turtle. Can be set to any string. |
+| `label-color` | The color of the turtle's label. Can be set to any color name or number. |
+| `breed` | The breed of the turtle. Can be set to any breed defined in the model. |
+| `hidden?` | A boolean value indicating whether the turtle is hidden or visible. Can be set to `true` or `false`. |
+| `size` | The size of the turtle. Can be set to any number. |
+| `pen-size` | The size of the turtle's pen. Can be set to any number. |
+| `pen-mode` | The mode of the turtle's pen. Can be set to `up` or `down`. |
