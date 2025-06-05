@@ -105,6 +105,41 @@ ask turtles [
 ]
 ```
 
+## Killing Turtles
+
+To remove turtles from your model, you can use the `die` command. This command removes the turtle from the world and frees up its resources. For example, the following command removes all turtles from the world:
+
+```bash
+ask turtles [
+  die
+]
+```
+
+You can also use the `ask` command to remove specific turtles based on their properties. For example, the following command removes all turtles with a size greater than 2:
+
+```bash
+ask turtles with [size > 2] [
+  die
+]
+```
+
+The following command removes all turtles with a color of red:
+
+```bash
+ask turtles with [color = red] [
+  die
+]
+```
+
+The following command removes all turtles with a shape of "circle":
+
+```bash
+ask turtles with [shape = "circle"] [
+  die
+]
+```
+
+
 The table below contains all properties that you can set for turtles:
 
 | Property | Description |
