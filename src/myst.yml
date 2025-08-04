@@ -1,0 +1,40 @@
+version: 1
+project:
+  title: HNRS251 - Social Computing
+  authors:
+    - name: Jonathan Hill
+    - name: Eric Araújo
+  copyright: '2025'
+  github: ericaraujophd/socialcomputing
+  bibliography:
+    - references.bib
+  exports:
+    - format: pdf
+      template: plain_latex_book
+      output: exports/book.pdf
+  toc:
+    - file: intro.md
+    - title: Introduction to Modeling Social Behavior
+      children:
+        - file: 01_Intro/01a_WhatIsAModel.md
+    - title: Netlogo Interface Guide
+      children:
+        - file: netlogo/interface/0_intro.md
+    - title: Netlogo Programming Guide
+      children:
+        - file: netlogo/coding/0_intro2netlogo.md
+        - file: netlogo/coding/1_agents.md
+          children:
+            - file: netlogo/coding/1a_turtles.md
+    - title: Netlogo Behavior Space Guide
+      children:
+        - file: netlogo/behaviorspace/0_intro2behaviorspace.md
+    - title: References
+      children:
+        - file: references.md
+site:
+  options:
+    logo: logo.png
+    favicon: logo.png
+    folders: true
+  template: book-theme
