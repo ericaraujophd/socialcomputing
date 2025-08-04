@@ -40,11 +40,11 @@ jobs:
       - name: Build HTML Assets
         run: |
           cd src
-          myst build --html
+          myst build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './src/_build/html'
+          path: './src/_build/site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
